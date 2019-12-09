@@ -273,7 +273,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-08 16:19:08" itemprop="dateModified" datetime="2019-12-08T16:19:08+08:00">2019-12-08</time>
+                <time title="修改时间：2019-12-09 08:42:16" itemprop="dateModified" datetime="2019-12-09T08:42:16+08:00">2019-12-09</time>
               </span>
 
           
@@ -292,13 +292,15 @@
 <p>有三根杆A，B，C。A杆上有n（n&gt;1）个穿孔圆盘，盘的尺寸由上到下依次变大。要求按下列规则将所有的圆盘移至C杆：<br>1.每次只能移动一个穿孔圆盘。<br>2.大盘不能叠在小盘上面。  </p>
 </blockquote>
 <p>汉诺塔游戏和斐波那契数列一样是典型的可通过递归思维解决，或者说斐波那契数列就是通过递归定义的.  </p>
+<blockquote>
 <p>f0=0<br>f1=1<br>fn=fn-1+fn-2  </p>
+</blockquote>
 <p>我理解的递归便是重复某种相同的操作（算法，方法又或语句）。对于斐波那契数列来讲，它要重复的操作是计算本项（项&gt;1）的前两项之和。而每一项又是在计算该项的前两项之和。<br>而对于汉诺塔游戏来讲，首先通过画图实际思考可以轻松的找出n=2或者n=3的。而在此基础上，总结对于n+1个圆盘的移法：</p>
 <blockquote>
 <p>1.将n个圆盘移动到B盘上。<br>2.将n+1个圆盘移动到C上。<br>3.以同样方法将B盘上的n个圆盘移动到C盘上。  </p>
 </blockquote>
 <p>其中的规律，当n=1时，直接A—&gt;C,现目标是B盘，故B，C盘位置交换即可。<br>第二步都是A—&gt;C。<br>第三步原为A—C，现为B—C，A，B盘交换位置。  </p>
-<p>实现如下：<br>public void h(int n,char A,char C,char B){<br>    if(n==1){syso(A+”—&gt;”+C);}<br>    else{<br>    h(n-1,A,B,C);<br>    h(1,A,C,B);<br>    h(n-1,B,C,A);<br>}<br>}</p>
+<p>实现如下：<br>、、、public void h(int n,char A,char C,char B){<br>    if(n==1){syso(A+”—&gt;”+C);}<br>    else{<br>    h(n-1,A,B,C);<br>    h(1,A,C,B);<br>    h(n-1,B,C,A);<br>}<br>}、、、</p>
 
       
     </div>
