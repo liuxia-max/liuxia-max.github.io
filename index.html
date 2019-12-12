@@ -206,10 +206,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2019-11-21 19:34:26 / 修改时间：19:37:08" itemprop="dateCreated datePublished" datetime="2019-11-21T19:34:26+08:00">2019-11-21</time>
+              <time title="创建时间：2019-11-21 19:34:26" itemprop="dateCreated datePublished" datetime="2019-11-21T19:34:26+08:00">2019-11-21</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-12-12 16:10:31" itemprop="dateModified" datetime="2019-12-12T16:10:31+08:00">2019-12-12</time>
+              </span>
 
           
 
@@ -222,7 +228,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>##just begin!</p>
+          <p>just begin!</p>
 
       
     </div>
@@ -273,7 +279,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-09 08:44:03" itemprop="dateModified" datetime="2019-12-09T08:44:03+08:00">2019-12-09</time>
+                <time title="修改时间：2019-12-12 16:25:23" itemprop="dateModified" datetime="2019-12-12T16:25:23+08:00">2019-12-12</time>
               </span>
 
           
@@ -300,7 +306,7 @@
 <p>1.将n个圆盘移动到B盘上。<br>2.将n+1个圆盘移动到C上。<br>3.以同样方法将B盘上的n个圆盘移动到C盘上。  </p>
 </blockquote>
 <p>其中的规律，当n=1时，直接A—&gt;C,现目标是B盘，故B，C盘位置交换即可。<br>第二步都是A—&gt;C。<br>第三步原为A—C，现为B—C，A，B盘交换位置。  </p>
-<p>实现如下：<br>、、、public void h(int n,char A,char C,char B){<br>    if(n==1){syso(A+”—&gt;”+C);}<br>    else{<br>    h(n-1,A,B,C);<br>    h(1,A,C,B);<br>    h(n-1,B,C,A);<br>}<br>}、、、</p>
+<p>实现如下：<br>、、、java<br>public void h(int n,char A,char C,char B){<br>    if(n==1){syso(A+”—&gt;”+C);}<br>    else{<br>    h(n-1,A,B,C);<br>    h(1,A,C,B);<br>    h(n-1,B,C,A);<br>}<br>、、、<br>}</p>
 
       
     </div>
